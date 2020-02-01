@@ -64,7 +64,7 @@ while( digitalRead(reed)== logic ) {                               // if the sea
     //Serial.println("Obtaitning 100 samples");
     for (int i = 0; i < 100; i++) { 
       accelgyro.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);          // get the accelerometer readings                                                 
-      data[i] = ay;
+      data[i] = ax;
     //Serial.print(" ");
     //Serial.print(data[i]);
     //Serial.print(" ");
